@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health & Safety Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Health & Safety Tracker</h1>
+    </header>
+    <main>
+        <section id="health-tracking">
+            <h2>Health Tracking Form</h2>
+            <form id="health-form">
+                <label for="health-data">Enter Health Data:</label>
+                <input type="text" id="health-data" required>
+                <button type="submit">Add</button>
+            </form>
+            <ul id="health-list"></ul>
+        </section>
+
+        <section id="wellness-tips">
+            <h2>Wellness Tips</h2>
+            <button id="get-tip">Get Daily Tip</button>
+            <p id="tip-text"></p>
+            <button id="more-tips">Request More Tips</button>
+        </section>
+
+        <section id="safety-alerts">
+            <h2>Safety Alerts</h2>
+            <button id="report-alert">Report a Safety Alert</button>
+            <p id="alert-response"></p>
+        </section>
+
+        <section id="emergency-contact">
+            <h2>Emergency Contact</h2>
+            <button id="get-location">Get My Location</button>
+            <p id="location-info"></p>
+        </section>
+
+        <section id="local-services">
+            <h2>Local Services Request</h2>
+            <label for="service-type">Select Service:</label>
+            <select id="service-type">
+                <option value="electrician">Electrician</option>
+                <option value="plumber">Plumber</option>
+                <option value="carpenter">Carpenter</option>
+            </select>
+            <button id="request-service">Request Service</button>
+            <ul id="service-requests"></ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
